@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document
 @Data
@@ -19,6 +20,6 @@ public class Reservation {
 	private String restaurant;
 	private String people;
 	private String city;
-	private LocalDate date;
+	private LocalDateTime date;
 
 }
