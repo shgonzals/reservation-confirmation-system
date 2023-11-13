@@ -17,7 +17,7 @@ public class SendEmail {
 		String fechaConfirmacion = confirmation.getDateReservation().getDayOfMonth() + "-" + confirmation.getDateReservation().getMonthValue()  + "-" +  confirmation.getDateReservation().getYear();
 
 		SendEmailRequest sendEmailRequest = SendEmailRequest.builder()
-								.from("send@shgonzals.es")
+								.from("Reservation Confirmation System <send@shgonzals.es>")
 								.to(confirmation.getEmail())
 								.subject("Reserva confirmada " + confirmation.getRestaurant() + " " + fechaConfirmacion)
 								.html("<div>\n"
